@@ -21,4 +21,7 @@
 go.work
 
 terraform/.terraform/*
-terraform/.terraform.lock.hcl
+
+.DS_Store
+*/.DS_Store
+
