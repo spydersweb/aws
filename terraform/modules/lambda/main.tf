@@ -13,9 +13,8 @@ data "archive_file" "function_archive" {
   }
 
 resource "aws_lambda_function" "function" {
-  function_name = local.function_name
-  description   = local.function_description
-
+  function_name = var.function_name
+  description   = var.function_description
   role          = aws_iam_role.lambda.arn
   handler       = local.binary_path
   memory_size   = 128
