@@ -1,5 +1,5 @@
 locals {
-  src_path     = "${path.module}/lambda/${var.function_name}"
+  src_path     = "${path.module}/${var.function_name}"
 
   binary_name  = var.function_name
   binary_path  = "${path.module}/tf_generated/${local.binary_name}"
